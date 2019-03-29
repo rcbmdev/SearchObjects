@@ -17,9 +17,9 @@ na imagem seja armazenado no ElasticSearch.
 ### Configuração
 
 Na aplicação usamos um Bucket S3 para o armazenamento de imagens. Além de provisionarmos um serviço do ElasticSearch na AWS. Para saber mais detalhes acesse o artigo abaixo:
-```
-https://medium.com/ensina-ai/busca-por-objetos-em-imagens-com-amazon-rekognition-e-elasticsearch-38c988e653b?source=---------2------------------
-```
+
+https://medium.com/ensina-ai/busca-por-objetos-em-imagens-com-amazon-rekognition-e-elasticsearch-38c988e653b
+
 
 ## Execução da aplicação
 Após a configuração de todos os passos acima, basta abrir o diretório site e navegar pelo arquivo index.html. Como é um site estático, ele pode ser colocado em produção num Bucket S3.
