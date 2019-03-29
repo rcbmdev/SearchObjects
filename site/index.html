@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>SearchImg</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.85.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/list.js"></script>
+    
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">SearchImg</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" active>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="upload.html">Upload foto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre.html">Sobre</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-lg-2" type="text" id="searchtext" placeholder="Busque por imagens">
+      <button id="search" class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+    </form>
+  </div>
+</nav>
+    <hr>
+    <h2 class="text-center">Lista de imagens do S3</h2>
+    <div id="album-search">
+
+    </div>
+    
+     <div id="album-list">
+
+    </div>   
+    
+      
+  </body>
+</html>

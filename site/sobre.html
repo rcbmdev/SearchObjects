@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>SearchImg</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.85.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">SearchImg</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navb">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" active>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="upload.html">Upload foto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre.html">Sobre</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+    <hr>
+    <h2 class="text-center">Sobre a aplicação</h2>
+      <div class="row">
+        <div class="col-6">
+          <img src="imagem.gif" alt="Arquitetura da aplicação">
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">A aplicação SearchImg, integra dois serviços do Amazon AWS, o Rekognition, famoso serviço de Visão Computacional, e o ElasticSearch, que funciona como um servidor de buscas distribuídos. Aplicamos o Rekognition para detectar objetos nas imagens que fizermos o upload pela aplicação. Logo após a detecção de objetos, a aplicação vai inserir o resultado em um documento no ElasticSearch, para que posteriormente possa ser buscado os dados que estiverem na plataforma. Além dos dois serviços, foi utilizado outros para facilitar a integração entre os serviços, como o Lambda, para provisionar a execução da aplicação, quando novas imagens forem upadas. Também utilizamos API Gateway para facilitar a integração com a busca no ElasticSearch, gerando uma API Rest que pode ser consumida por aplicações de terceiros.</p>
+              <!-- <a href="#" class="btn btn-primary">Link github</a> -->
+            </div>
+          </div>
+        </div>
+      </div>  
+  </body>
+</html>
